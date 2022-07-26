@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:save_money_ui/util/theme/app_colors.dart';
 
+import '../common/screen_util.dart';
+
 class AppThemes {
   AppThemes._();
 
@@ -15,13 +17,9 @@ class AppThemes {
   static const Color _lightBackgroundSecondaryColor = white;
   static const Color _lightBackgroundAlertColor = white;
   static const Color _lightBackgroundActionTextColor = white;
-  static final Color _lightBackgroundErrorColor = red100;
-  static const Color _lightBackgroundSuccessColor = white;
 
   //text colors
   static const Color _lightTextColor = Colors.black;
-  static const Color _lightAlertTextColor = Colors.black;
-  static const Color _lightTextSecondaryColor = Colors.black;
 
   //Icon Color
   static const Color _lightIconColor = Colors.black;
@@ -30,22 +28,54 @@ class AppThemes {
   static final Color _lightBorderColor = HexColor("#F1F1FA");
 
   //form input colors
-  static const Color _lightInputFillColor = _lightBackgroundSecondaryColor;
   static final Color _lightBorderActiveColor = _lightPrimaryColor;
   static final Color _lightBorderErrorColor = red100;
 
   //light text theme
   static final TextTheme _lightTextTheme = TextTheme(
-    titleLarge: TextStyle(
-      height: 80,
-      color: dark75,
-      fontWeight: FontWeight.bold,
-    ),
-    headlineLarge: TextStyle(
-      height: 39,
-      color: dark75,
-      fontWeight: FontWeight.bold,
-    ),
+      headlineLarge: TextStyle(
+        fontSize: size(32),
+        height: height(39)/size(32),
+        color: white,
+        fontWeight: FontWeight.w700,
+        fontFamily: font,
+      ),
+      headlineMedium: TextStyle(
+        fontSize: size(36),
+        height: height(44)/size(36),
+        color: Colors.black,
+        fontWeight: FontWeight.w500,
+        fontFamily: font,
+      ),
+      titleLarge: TextStyle(
+        fontSize: size(24),
+        height: height(29)/size(24),
+        color: white.withOpacity(0.72),
+        fontFamily: font,
+        fontWeight: FontWeight.w500,
+      ),
+      titleMedium: TextStyle(
+        fontSize: size(24),
+        height: height(29)/size(24),
+        color: Colors.black,
+        fontFamily: font,
+        fontWeight: FontWeight.w500,
+      ),
+      titleSmall: TextStyle(
+        fontSize: size(18),
+        height: height(21.78)/size(18),
+        color: Colors.black,
+        fontFamily: font,
+        fontWeight: FontWeight.w500,
+      ),
+      displayLarge: TextStyle(
+        fontSize: size(64),
+        height: height(80)/size(64),
+        color: white,
+        fontWeight: FontWeight.w700,
+        fontFamily: font,
+      )
+
   );
 
   static final ThemeData lightTheme = ThemeData(
