@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:save_money_ui/modules/common/financial_report_pageview/expense.dart';
+import 'package:save_money_ui/modules/report/views/financial_report_pageview/expense.dart';
 import 'package:save_money_ui/util/common/screen_util.dart';
 import 'package:save_money_ui/util/constants/app_image.dart';
 import 'package:save_money_ui/util/theme/app_theme.dart';

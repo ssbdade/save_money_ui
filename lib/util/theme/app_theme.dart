@@ -33,49 +33,62 @@ class AppThemes {
 
   //light text theme
   static final TextTheme _lightTextTheme = TextTheme(
-      headlineLarge: TextStyle(
-        fontSize: size(32),
-        height: height(39)/size(32),
-        color: white,
-        fontWeight: FontWeight.w700,
-        fontFamily: font,
-      ),
-      headlineMedium: TextStyle(
-        fontSize: size(36),
-        height: height(44)/size(36),
-        color: Colors.black,
-        fontWeight: FontWeight.w500,
-        fontFamily: font,
-      ),
-      titleLarge: TextStyle(
-        fontSize: size(24),
-        height: height(29)/size(24),
-        color: white.withOpacity(0.72),
-        fontFamily: font,
-        fontWeight: FontWeight.w500,
-      ),
-      titleMedium: TextStyle(
-        fontSize: size(24),
-        height: height(29)/size(24),
-        color: Colors.black,
-        fontFamily: font,
-        fontWeight: FontWeight.w500,
-      ),
-      titleSmall: TextStyle(
-        fontSize: size(18),
-        height: height(21.78)/size(18),
-        color: Colors.black,
-        fontFamily: font,
-        fontWeight: FontWeight.w500,
-      ),
-      displayLarge: TextStyle(
-        fontSize: size(64),
-        height: height(80)/size(64),
-        color: white,
-        fontWeight: FontWeight.w700,
-        fontFamily: font,
-      )
-
+    headlineLarge: TextStyle(
+      fontSize: size(32),
+      height: height(39) / size(32),
+      color: white,
+      fontWeight: FontWeight.w700,
+      fontFamily: font,
+    ),
+    headlineMedium: TextStyle(
+      fontSize: size(36),
+      height: height(44) / size(36),
+      color: Colors.black,
+      fontWeight: FontWeight.w500,
+      fontFamily: font,
+    ),
+    titleLarge: TextStyle(
+      fontSize: size(24),
+      height: height(29) / size(24),
+      color: white.withOpacity(0.72),
+      fontFamily: font,
+      fontWeight: FontWeight.w500,
+    ),
+    titleMedium: TextStyle(
+      fontSize: size(24),
+      height: height(29) / size(24),
+      color: Colors.black,
+      fontFamily: font,
+      fontWeight: FontWeight.w500,
+    ),
+    titleSmall: TextStyle(
+      fontSize: size(18),
+      height: height(21.78) / size(18),
+      color: Colors.black,
+      fontFamily: font,
+      fontWeight: FontWeight.w500,
+    ),
+    displayLarge: TextStyle(
+      fontSize: size(64),
+      height: height(80) / size(64),
+      color: white,
+      fontWeight: FontWeight.w700,
+      fontFamily: font,
+    ),
+    displayMedium: TextStyle(
+      fontSize: size(24),
+      height: height(29) / size(24),
+      color: white,
+      fontFamily: font,
+      fontWeight: FontWeight.w600,
+    ),
+    displaySmall: TextStyle(
+      fontSize: size(18),
+      height: height(22) / size(18),
+      color: violet100,
+      fontFamily: font,
+      fontWeight: FontWeight.w600,
+    ),
   );
 
   static final ThemeData lightTheme = ThemeData(
@@ -137,5 +150,4 @@ class AppThemes {
       //focusColor: _lightBorderActiveColor,
     ),
   );
-
 }

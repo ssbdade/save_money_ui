@@ -13,6 +13,10 @@ abstract class LocaleKeys {
   static const salary = "Salary";
   static const salaryMoney = "\$ 5000";
   static const twoOf12Budget = "2 of 12 Budget is exceeds the limit";
+  static const food = "Food";
+  static const financialFreedom = "“Financial freedom is freedom from fear.”";
+  static const RobertKiyosaki = "-Robert Kiyosaki";
+  static const seeFullDetail = "See the full detail";
 
 
 
