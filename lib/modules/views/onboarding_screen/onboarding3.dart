@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:save_money/modules/common/theme_helper.dart';
 
-class OnBoarding1Page extends StatelessWidget {
-  const OnBoarding1Page({Key? key}) : super(key: key);
+class OnBoarding3Page extends StatelessWidget {
+  const OnBoarding3Page({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,33 +20,29 @@ class OnBoarding1Page extends StatelessWidget {
                 height: 300.0,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/img_1.png'),
+                    image: AssetImage('assets/img_3.png'),
                   ),
                 ),
               ),
               const SizedBox(height: 10.0),
-              const Text('        Gain total control',style: TextStyle(color: Colors.black,fontSize: 33.0,fontWeight: FontWeight.bold),),
-              const SizedBox(height: 10.0),
-              const Text('             of your money',style: TextStyle(color: Colors.black,fontSize: 30.0,fontWeight: FontWeight.bold),),
-              const SizedBox(height: 10.0,),
-              const Text('             Become your own money manager',style: TextStyle(color: Colors.grey,fontSize: 18.0,fontWeight: FontWeight.bold),),
-              const SizedBox(height: 10.0,),
-              const Text('                    and make every cent count',style: TextStyle(color: Colors.grey,fontSize: 18.0,fontWeight: FontWeight.bold),),
-              const SizedBox(height: 20.0),
-              Center(
-                child: DotsIndicator(
-                dotsCount: 3,
-                position: 0,
-                ),
+               const Center(
+                 child: Text('Planning ahead',
+                  style: TextStyle(color: Colors.black,fontSize: 33.0,fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 20.0,),
+               ),
+              const SizedBox(height: 10.0,),
+              const Text('Setup your budget for each category so you in control',style: TextStyle(color: Colors.grey,fontSize: 18.0,fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 100.0,),
               SizedBox(
                 width: 400.0,
                 height: 50.0,
                 child: ElevatedButton(
                   style: ThemeHelper().buttonStyle(),
                   onPressed: () {},
-                    child: const Text('Sign Up',style: TextStyle(fontSize: 20.0,color: Colors.white),
+                  child: const Text('Sign Up',style: TextStyle(fontSize: 20.0,color: Colors.white),
                   ),
                 ),
               ),

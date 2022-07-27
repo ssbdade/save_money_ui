@@ -15,7 +15,7 @@ class _VertificationPageState extends State<VertificationPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        leading: const Icon(Icons.arrow_back),
+        leading: const Icon(Icons.arrow_back,color: Colors.black,),
         title: const Text('Verification',style: TextStyle(color: Colors.black,fontSize: 20.0,fontWeight: FontWeight.bold),),
         centerTitle: true,
       ),

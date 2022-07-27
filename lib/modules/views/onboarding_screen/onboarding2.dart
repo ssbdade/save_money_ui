@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:save_money/modules/common/theme_helper.dart';
 
-class OnBoarding3Page extends StatelessWidget {
-  const OnBoarding3Page({Key? key}) : super(key: key);
+class OnBoarding2Page extends StatelessWidget {
+  const OnBoarding2Page({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,24 +20,21 @@ class OnBoarding3Page extends StatelessWidget {
                 height: 300.0,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/img_3.png'),
+                    image: AssetImage('assets/img_2.png'),
                   ),
                 ),
               ),
               const SizedBox(height: 10.0),
-              const Text('         Planning ahead',style: TextStyle(color: Colors.black,fontSize: 33.0,fontWeight: FontWeight.bold),),
-              const SizedBox(height: 10.0,),
-              const Text('          Setup your budget for each category',style: TextStyle(color: Colors.grey,fontSize: 18.0,fontWeight: FontWeight.bold),),
-              const SizedBox(height: 10.0,),
-              const Text('                          so you in control',style: TextStyle(color: Colors.grey,fontSize: 18.0,fontWeight: FontWeight.bold),),
-              const SizedBox(height: 20.0),
-              Center(
-                child: DotsIndicator(
-                  dotsCount: 3,
-                  position: 2,
-                ),
+              const Text('Know where your money goes',
+                style: TextStyle(color: Colors.black,fontSize: 33.0,fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 20.0,),
+              const SizedBox(height: 10.0,),
+              const Text('Track your transaction easily,with categories and financial report',
+                style: TextStyle(color: Colors.grey,fontSize: 18.0,fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 60.0,),
               SizedBox(
                 width: 400.0,
                 height: 50.0,
