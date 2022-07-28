@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:save_money/modules/splash/splash_page.dart';
 import 'package:save_money/modules/views/add_account.dart';
 import 'package:save_money/modules/views/add_wallet.dart';
+import 'package:save_money/modules/views/expense_page.dart';
 import 'package:save_money/modules/views/forgot_password.dart';
 import 'package:save_money/modules/views/login_page.dart';
 import 'package:save_money/modules/views/onboarding_screen/onboarding1.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: AddWalletPage(),
+      home: ExpensePage(),
     );
   }
 }
