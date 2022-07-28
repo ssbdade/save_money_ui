@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+import 'package:save_money/util/theme/app_colors.dart';
 class RetypePinPage extends StatefulWidget {
   const RetypePinPage({Key? key}) : super(key: key);
 
@@ -13,7 +14,7 @@ class _RetypePinPageState extends State<RetypePinPage> {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Colors.purple,
+      backgroundColor: violet100,
       body: Column(
         children:  [
           const SizedBox(height: 100.0,),

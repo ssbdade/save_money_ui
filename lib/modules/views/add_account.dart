@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:save_money/modules/common/theme_helper.dart';
+import 'package:save_money/util/theme/app_colors.dart';
 
 class AddAcountPage extends StatefulWidget {
   const AddAcountPage({Key? key}) : super(key: key);
@@ -13,12 +14,12 @@ class _AddAcountPageState extends State<AddAcountPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple,
+        backgroundColor: violet100,
         leading: const Icon(Icons.arrow_back,color: Colors.white,),
         title: const Text('Add new account',style: TextStyle(color: Colors.white),),
         centerTitle: true,
       ),
-      backgroundColor: Colors.purple,
+      backgroundColor: violet100,
       body: SingleChildScrollView(
         child: Column(
           children: [

@@ -23,14 +23,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
         children: [
           PageView(
             controller: _controller,
-            children: [
+            children: const [
               OnBoarding1Page(),
               OnBoarding2Page(),
               OnBoarding3Page(),
             ],
           ),
           Container(
-            alignment: Alignment(0,0.36),
+            alignment: const Alignment(0,0.36),
             child: SmoothPageIndicator(
               controller: _controller,
               count: 3,

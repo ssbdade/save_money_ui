@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:save_money/util/theme/app_colors.dart';
 
 class ThemeHelper{
   InputDecoration textInputDecoration([String labelText = "", String hintText = ""]){
@@ -18,10 +19,10 @@ class ThemeHelper{
     Color c1 = Theme.of(context).primaryColor;
     Color c2 = Theme.of(context).accentColor;
     if(color1.isEmpty == false){
-      c1 = HexColor(color1);
+      c1 = violet100;
     }
     if(color2.isEmpty == false){
-      c2 = HexColor(color2);
+      c2 = violet100;
     }
     return    BoxDecoration(
       boxShadow: const [
@@ -49,7 +50,7 @@ class ThemeHelper{
         ),
       ),
       minimumSize: MaterialStateProperty.all(const Size(50, 50)),
-      backgroundColor: MaterialStateProperty.all(Colors.blue),
+      backgroundColor: MaterialStateProperty.all(violet100),
       shadowColor: MaterialStateProperty.all(Colors.transparent),
     );
   }
