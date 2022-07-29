@@ -74,7 +74,7 @@ Widget incomeContainer(BuildContext context) {
                           color: green20,
                           borderRadius: BorderRadius.circular(radius(8)),
                         ),
-                        child: SvgPicture.asset(AppFileName.salaryBag,
+                        child: SvgPicture.asset(AppFileName.arrow,
                           fit: BoxFit.fill,
                         ),
                       ),

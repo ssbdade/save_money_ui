@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:save_money_ui/util/common/screen_util.dart';
 
 const Color white = Colors.white;
+const Color black = Colors.black;
 
-final HexColor dark25 = HexColor("#7A7E80");
-final HexColor dark50 = HexColor("#464A4D");
+final HexColor dark25 = HexColor("#292B2D");
+final HexColor dark50 = HexColor("#212325");
 final HexColor dark75 = HexColor("#161719");
 final HexColor dark100 = HexColor("#0D0E0F");
 
-final HexColor light20 = HexColor("#E3E5E5");
+final HexColor light20 = HexColor("#91919F");
 final HexColor light40 = HexColor("#F2F4F5");
-final HexColor light60 = HexColor("#F7F9FA");
+final HexColor light60 = HexColor("#F1F1FA");
 final HexColor light80 = HexColor("#FBFBFB");
 const Color light100 = Colors.white;
 
@@ -57,3 +59,57 @@ class HexColor extends Color {
 
   HexColor(final String hexColor) : super(_getColorFromHex(hexColor));
 }
+
+
+final LinearGradient lineChartGradient = LinearGradient(
+  begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [
+      HexColor("#8040C0"),
+      HexColor("#8040C0").withOpacity(0.24)
+    ]
+);
+
+final List<Color> expenseColorList = [
+  red100,
+  yellow100,
+  violet100,
+];
+
+final List<Color> incomeColorList = [
+  green100,
+  dark100
+];
+
+final TextTheme expenseTextTheme = TextTheme(
+  displaySmall: TextStyle(
+    fontSize: size(16),
+    height: height(19.36) / size(16),
+    color: red100,
+    fontWeight: FontWeight.w500,
+    fontFamily: "Inter",
+  ),
+  bodyMedium: TextStyle(
+    fontSize: size(24),
+    height: height(29) / size(24),
+    color: red100,
+    fontWeight: FontWeight.w500,
+    fontFamily: "Inter",
+  ),
+);
+final TextTheme incomeTextTheme = TextTheme(
+  displaySmall: TextStyle(
+    fontSize: size(16),
+    height: height(19.36) / size(16),
+    color: green100,
+    fontWeight: FontWeight.w500,
+    fontFamily: "Inter",
+  ),
+  bodyMedium: TextStyle(
+    fontSize: size(24),
+    height: height(29) / size(24),
+    color: green100,
+    fontWeight: FontWeight.w500,
+    fontFamily: "Inter",
+  ),
+);

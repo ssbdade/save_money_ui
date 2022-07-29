@@ -31,12 +31,35 @@ class AppThemes {
   static final Color _lightBorderActiveColor = _lightPrimaryColor;
   static final Color _lightBorderErrorColor = red100;
 
+
+
   //light text theme
   static final TextTheme _lightTextTheme = TextTheme(
+    labelMedium: TextStyle(
+      fontSize: size(16),
+      height: height(19.36) / size(16),
+      color: dark100,
+      fontWeight: FontWeight.w500,
+      fontFamily: font,
+    ),
+    labelSmall: TextStyle(
+      fontSize: size(13),
+      height: height(16) / size(13),
+      color: light20,
+      fontWeight: FontWeight.w500,
+      fontFamily: font,
+    ),
     headlineLarge: TextStyle(
       fontSize: size(32),
       height: height(39) / size(32),
       color: white,
+      fontWeight: FontWeight.w700,
+      fontFamily: font,
+    ),
+    bodyMedium: TextStyle(
+      fontSize: size(32),
+      height: height(39) / size(32),
+      color: Colors.black,
       fontWeight: FontWeight.w700,
       fontFamily: font,
     ),
@@ -66,7 +89,7 @@ class AppThemes {
       height: height(21.78) / size(18),
       color: Colors.black,
       fontFamily: font,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w600,
     ),
     displayLarge: TextStyle(
       fontSize: size(64),
@@ -88,6 +111,13 @@ class AppThemes {
       color: violet100,
       fontFamily: font,
       fontWeight: FontWeight.w600,
+    ),
+    bodySmall: TextStyle(
+      fontSize: size(14),
+      height: height(18) / size(14),
+      color: dark50,
+      fontFamily: font,
+      fontWeight: FontWeight.w500,
     ),
   );
 

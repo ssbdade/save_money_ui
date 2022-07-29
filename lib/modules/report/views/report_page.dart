@@ -44,9 +44,7 @@ class _ReportPageState extends State<ReportPage> {
             quoteContainer(context)
           ],
           onPageChanged: (index) {
-            setState(() {
               controller.changeValue(index);
-            });
           },
         ),
         Align(
