@@ -18,6 +18,8 @@ abstract class LocaleKeys {
   static const RobertKiyosaki = "-Robert Kiyosaki";
   static const seeFullDetail = "See the full detail";
 
+  static const transaction = "Transaction";
+
 
 
 }
